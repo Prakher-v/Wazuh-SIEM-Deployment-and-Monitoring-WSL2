@@ -40,4 +40,4 @@ This project demonstrates the deployment and configuration of Wazuh, an open-sou
 
 Here's a screenshot of my project:
 
-![ Img: Installing the Wazuh Server in Ubuntu](<img width="1077" height="722" alt="1" src="https://github.com/user-attachments/assets/b1e40acb-ed48-4d45-8e32-8defebb47ae3" />)
+![ Img: Installing the Wazuh Server in Ubuntu](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/1.png)
