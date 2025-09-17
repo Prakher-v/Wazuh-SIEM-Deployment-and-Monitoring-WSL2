@@ -58,12 +58,12 @@ This project demonstrates the deployment and configuration of Wazuh, an open-sou
 #### Challenge: Initially, the Wazuh agent failed to connect with the server due to incorrect configuration of IP addresses and ports.
 #### Solution: I troubleshooted by verifying network settings, adjusting firewall rules, and ensuring that the Wazuh server was listening on the correct port (5601). After re-registering the agent with the corrected configuration, the connection was successfully established.
 
-###3. Event Simulation Constraints
+### 3. Event Simulation Constraints
 
 #### Challenge: I intended to perform an Nmap TCP SYN scan to generate attack traffic and observe the detection in the Wazuh dashboard. However, due to resource limitations, running the scan caused system instability.
-####Solution: I documented the attack methodology and validated event logging with lighter activity instead. This still proved that the Wazuh setup could collect and analyze logs effectively.
+#### Solution: I documented the attack methodology and validated event logging with lighter activity instead. This still proved that the Wazuh setup could collect and analyze logs effectively.
 
-##Key Learnings
+## Key Learnings
 
 -	Understood how endpoint agents forward logs to a centralized server for analysis.
 -	Practical experience with endpoint-agent communication in Wazuh.
