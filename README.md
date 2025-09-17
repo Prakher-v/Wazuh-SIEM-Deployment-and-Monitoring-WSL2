@@ -73,4 +73,6 @@ This project demonstrates the deployment and configuration of Wazuh, an open-sou
 -	Developed resilience in overcoming technical roadblocks through research, troubleshooting, and alternative approaches.
 -	Enhanced understanding of real-time monitoring, alert prioritization, and compliance-related event handling.
 
+## For more information, visit the [Wazuh Docs](https://documentation.wazuh.com/current/quickstart.html).
+
 
