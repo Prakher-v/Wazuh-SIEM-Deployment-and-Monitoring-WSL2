@@ -36,8 +36,41 @@ This project demonstrates the deployment and configuration of Wazuh, an open-sou
 - Despite constraints, the setup validated Wazuh’s ability to effectively collect and display agent events.
 
 ## Illustrations
-# My Project
-
-Here's a screenshot of my project:
 
 ![ Img: Installing the Wazuh Server in Ubuntu](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/1.png)
+![ Img: Wazuh Dashboard Login Page](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/2.png)
+![ Img:](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/3.png)
+![ Img:](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/4.png)
+![ Img: Create a Linux Agent “Prakher-Linux-Agent”](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/5.png)
+![ Linux Agent](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/6.png)
+![ Img:](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/7.png)
+![ Img: Events from Linux Agent in Dashboard](https://github.com/Prakher-v/Wazuh-SIEM-Deployment-and-Monitoring-WSL2/blob/main/imgaes_Wazuh/8.png)
+
+## Challenges and How I Overcame Them
+
+### 1. System Resource Limitations
+
+#### Challenge: Wazuh requires at least 2 CPU cores, 4 GB RAM, and 50 GB storage, but my laptop specifications were below these requirements. Running a full virtual machine environment for Wazuh was not possible.
+#### Solution: I used WSL2 (Windows Subsystem for Linux) instead of traditional virtual machines. This allowed me to deploy both the Wazuh server and agent in lightweight Linux environments while staying within my hardware limits.
+
+### 2. Agent Connectivity Issues
+
+#### Challenge: Initially, the Wazuh agent failed to connect with the server due to incorrect configuration of IP addresses and ports.
+#### Solution: I troubleshooted by verifying network settings, adjusting firewall rules, and ensuring that the Wazuh server was listening on the correct port (5601). After re-registering the agent with the corrected configuration, the connection was successfully established.
+
+###3. Event Simulation Constraints
+
+#### Challenge: I intended to perform an Nmap TCP SYN scan to generate attack traffic and observe the detection in the Wazuh dashboard. However, due to resource limitations, running the scan caused system instability.
+####Solution: I documented the attack methodology and validated event logging with lighter activity instead. This still proved that the Wazuh setup could collect and analyze logs effectively.
+
+##Key Learnings
+
+-	Understood how endpoint agents forward logs to a centralized server for analysis.
+-	Practical experience with endpoint-agent communication in Wazuh.
+-	Hands-on exposure to SIEM-like monitoring workflows.
+-	Improved ability to resolve connectivity and configuration issues between distributed components.
+-	Learned how to adapt enterprise-grade security tools (like Wazuh) to run effectively in a resource-constrained environment using WSL2.
+-	Developed resilience in overcoming technical roadblocks through research, troubleshooting, and alternative approaches.
+-	Enhanced understanding of real-time monitoring, alert prioritization, and compliance-related event handling.
+
+
